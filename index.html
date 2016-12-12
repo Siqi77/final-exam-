@@ -60,33 +60,31 @@
 }
 
 .charts-container {
-  position:  position: relative;
-             display: fixed;
-             width: 250px;
-             top: 0px;
-             z-index: 90;
-             padding-bottom: 200px;
-             margin-left: 10em; 
+  position: relative;
 }
 .charts-container .bar-chart--label {
   float: left;
   width: 50px;
   padding-bottom: 6px;
+   margin-left:7em;
 }
 .charts-container .bar-chart-horizontal {
   padding-left: 50px;
   padding-top: 6px;
+  margin-left:7em;
 }
 .charts-container .bar-chart-horizontal .bar-chart--track {
   background-color: black;
   height: 7px;
   width: auto;
   margin-left: 50px;
+  margin-left:7em;
 }
 .charts-container .bar-chart-horizontal .bar-chart--progress {
   display: inline-block;
   position: absolute;
   height: 7px;
+  margin-left:7em;
   background-color: orange;
   -moz-animation: progressScale-horizontal 1600ms 1 forwards;
   -webkit-animation: progressScale-horizontal 1600ms 1 forwards;
@@ -98,6 +96,7 @@
 .charts-container .bar-chart-vertical .bar-chart--track {
   background-color: black;
   width: 70px;
+  margin-left:7em;
   position: relative;
 }
 .charts-container .bar-chart-vertical .bar-chart--progress {
@@ -106,6 +105,7 @@
   bottom: 0;
   width: 70px;
   background-color: orange;
+  margin-left:7em;
   -moz-animation: progressScale-vertical 1600ms 1 forwards;
   -webkit-animation: progressScale-vertical 1600ms 1 forwards;
   animation: progressScale-vertical 1600ms 1 forwards;
@@ -117,11 +117,13 @@
   background-color: #929292;
   padding-left: 40px;
   border-bottom: 1px solid white;
+  margin-left:7em;
 }
 #chartVertical .bar-chart--track {
   height: 300px;
   margin-right: 40px;
   float: left;
+  margin-left:7em;
 }
 
 @-moz-keyframes progressScale-horizontal {
