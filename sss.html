@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+<br></br>
+body {
+  background-color: #999;
+  font-family: "Arial", san-serif;
+}
+
+.charts-container {
+  position: relative;
+}
+.charts-container .bar-chart--label {
+  float: left;
+  width: 70px;
+  padding-bottom: 6px;
+}
+.charts-container .bar-chart-horizontal {
+  padding-left: 60px;
+  padding-top: 6px;
+}
+.charts-container .bar-chart-horizontal .bar-chart--track {
+  background-color: black;
+  height: 7px;
+  width: 400px;
+  margin-left: 30px;
+}
+.charts-container .bar-chart-horizontal .bar-chart--progress {
+  display: inline-block;
+  position: absolute;
+  height: 7px;
+  background-color: orange;
+  -moz-animation: progressScale-horizontal 1600ms 1 forwards;
+  -webkit-animation: progressScale-horizontal 1600ms 1 forwards;
+  animation: progressScale-horizontal 1600ms 1 forwards;
+}
+.charts-container .bar-chart-vertical {
+  position: relative;
+}
+.charts-container .bar-chart-vertical .bar-chart--track {
+  background-color: black;
+  width: 70px;
+  position: relative;
+}
+.charts-container .bar-chart-vertical .bar-chart--progress {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  width: 70px;
+  background-color: orange;
+  -moz-animation: progressScale-vertical 1600ms 1 forwards;
+  -webkit-animation: progressScale-vertical 1600ms 1 forwards;
+  animation: progressScale-vertical 1600ms 1 forwards;
+}
+
+#chartVertical {
+  height: 300px;
+  width: 350px;
+  background-color: #929292;
+  padding-left: 40px;
+  border-bottom: 1px solid white;
+}
+#chartVertical .bar-chart--track {
+  height: 300px;
+  margin-right: 40px;
+  float: left;
+}
+
+
+@-moz-keyframes progressScale-horizontal {
+  0% {
+    width: 0;
+  }
+}
+@-webkit-keyframes progressScale-horizontal {
+  0% {
+    width: 0;
+  }
+}
+@keyframes progressScale-horizontal {
+  0% {
+    width: 0;
+  }
+}
+@-moz-keyframes progressScale-vertical {
+  0% {
+    height: 0;
+  }
+}
+@-webkit-keyframes progressScale-vertical {
+  0% {
+    height: 0;
+  }
+}
+@keyframes progressScale-vertical {
+  0% {
+    height: 0;
+  }
+}
+</style>
+
+<body>
+  <center>Sep 2016 City Bike</center>
+  <br></br>
+  <br></br>
+  <section id="chartHorizontal">
+  <div class="charts-container">
+    <p>User type</p>
+
+    <span class="bar-chart--label">Customer</span>
+    <div class="bar-chart-horizontal">
+      <span class="bar-chart--progress" style="width: 20%;"></span>
+      <div class="bar-chart--track"></div>
+    </div>
+
+    <br>
+
+
+    <span class="bar-chart--label">Subscribe</span>
+    <div class="bar-chart-horizontal">
+      <span class="bar-chart--progress" style="width:40%;"></span>
+      <div class="bar-chart--track"></div>
+    </div>
+  </div>
+</section>
+
+<br>
+<br>
+
+    <p>Gender</p>
+<section id="chartVertical">
+  <div class="charts-container">
+
+    <div class="bar-chart-vertical">
+
+      <div class="bar-chart--track">
+        <span class="bar-chart--progress" style="height: 25%;"></span>
+      </div>
+
+      <div class="bar-chart--track">
+        <span class="bar-chart--progress" style="height: 65%;"></span>
+      </div>
+
+      <div class="bar-chart--track">
+        <span class="bar-chart--progress" style="height: 95%;"></span>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+
+
+</html>
