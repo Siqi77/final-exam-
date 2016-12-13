@@ -1,0 +1,195 @@
+<style>
+
+.container {
+  width: 890px;
+}
+
+#graphic {
+  padding-top: 60px;
+}
+
+
+#sections {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  top: 0px;
+  z-index: 90;
+  padding-bottom: 200px;
+  margin-left:30em;
+}
+
+.step {
+  margin-bottom: 200px;
+  font-family: "TiemposTextWeb-Regular","Georgia";
+  font-size: 16px;
+  line-height: 23px;
+  color: #767678;
+}
+
+#sections .title {
+  font-family: Arial,Helvetica,"san-serif";
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  color: #262626;
+  line-height: 1.2em;
+}
+
+#extra-space {
+  height: 300px;
+}
+
+#vis {
+  display: inline-block;
+  position: fixed;
+  top: 60px;
+  z-index: 1;
+  margin-left: 0;
+  background-color: #999;
+  font-family: "Arial", san-serif;
+}
+
+.charts-container {
+  position: relative;
+}
+.charts-container .bar-chart--label {
+  float: left;
+  width: 70px;
+  padding-bottom: 6px;
+}
+.charts-container .bar-chart-horizontal {
+  padding-left: 60px;
+  padding-top: 6px;
+}
+.charts-container .bar-chart-horizontal .bar-chart--track {
+  background-color: black;
+  height: 7px;
+  width: 400px;
+  margin-left: 30px;
+}
+.charts-container .bar-chart-horizontal .bar-chart--progress {
+  display: inline-block;
+  position: absolute;
+  height: 7px;
+  background-color: orange;
+  -moz-animation: progressScale-horizontal 1600ms 1 forwards;
+  -webkit-animation: progressScale-horizontal 1600ms 1 forwards;
+  animation: progressScale-horizontal 1600ms 1 forwards;
+}
+.charts-container .bar-chart-vertical {
+  position: relative;
+}
+.charts-container .bar-chart-vertical .bar-chart--track {
+  background-color: black;
+  width: 70px;
+  position: relative;
+}
+.charts-container .bar-chart-vertical .bar-chart--progress {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  width: 70px;
+  background-color: orange;
+  -moz-animation: progressScale-vertical 1600ms 1 forwards;
+  -webkit-animation: progressScale-vertical 1600ms 1 forwards;
+  animation: progressScale-vertical 1600ms 1 forwards;
+}
+
+#chartVertical {
+  height: 300px;
+  width: 350px;
+  background-color: #929292;
+  padding-left: 40px;
+  border-bottom: 1px solid white;
+}
+#chartVertical .bar-chart--track {
+  height: 300px;
+  margin-right: 40px;
+  float: left;
+}
+
+
+@-moz-keyframes progressScale-horizontal {
+  0% {
+    width: 0;
+  }
+}
+@-webkit-keyframes progressScale-horizontal {
+  0% {
+    width: 0;
+  }
+}
+@keyframes progressScale-horizontal {
+  0% {
+    width: 0;
+  }
+}
+@-moz-keyframes progressScale-vertical {
+  0% {
+    height: 0;
+  }
+}
+@-webkit-keyframes progressScale-vertical {
+  0% {
+    height: 0;
+  }
+}
+@keyframes progressScale-vertical {
+  0% {
+    height: 0;
+  }
+
+  /* height: 600px; */
+  /* width: 600px; */
+  /* background-color: #ddd; */
+}
+
+body {
+
+  }
+}
+#vis .title {
+  font-size:120px;
+  text-anchor: middle;
+}
+
+#vis .sub-title {
+  font-size:80px;
+  text-anchor: middle;
+}
+
+#vis {
+  display: inline-block;
+  position: fixed;
+  top: 60px;
+  z-index: 1;
+  margin-left: 0;
+
+  height: 600px;
+  width: 600px;
+  background-color: #ddd;
+}
+
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #666;
+  shape-rendering: crispEdges;
+}
+
+.highlight {
+  fill: #008080;
+  font-weight: bold;
+}
+
+.cough-arrow {
+  stroke: #000;
+  stroke-width: 4px;
+
+
+}
+
+}
+</style>
